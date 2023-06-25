@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Time tracking dashboard</title>
+
+</head>
+<body>
+  <main class="main-section">
+    <section class="report" tabindex="0">
+      <div class="profile-section">
+        <div class="profile-image" tabindex="0">
+          <img src="./images/image-jeremy.png" alt="Profile picture of user" aria-label="Profile image of user">
+        </div>
+        <div class="profile-info">
+          <p class="report-for" tabindex="0">Report for</p>
+          <p class="name" tabindex="0">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="periodicals">
+        <p tabindex="0" id="daily" class="">Daily</p>
+        <p tabindex="0" id="weekly" class="active">Weekly</p>
+        <p tabindex="0" id="monthly" class="">Monthly</p>
+      </div>
+    </section>
+    <section class="results">
+      <div class="work activity" tabindex="0">
+        <div class="image">
+          <img src="./images/icon-work.svg" aria-label="icon of a suitcase"/>
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Work</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-work-h"></h5>
+            <p class="previous" id="previous-work-h"></p>
+          </div>
+        </div>
+      </div>
+      <div class="play activity" tabindex="0">
+        <div class="remote-image">
+          <img src="./images/icon-play.svg" alt="Play icon" aria-label="icon of a remote" />
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Play</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-play-h"></h5>
+            <p class="previous" id="previous-play-h"></p>
+          </div>
+        </div>
+      </div>
+      <div class="study activity" tabindex="0">
+        <div class="image">
+          <img src="./images/icon-study.svg" alt="Study icon" aria-label="icon of a book" />
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Study</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-study-h"></h5>
+            <p class="previous" id="previous-study-h"></p>
+          </div>
+        </div>
+      </div>
+      <div class="exercise activity" tabindex="0">
+        <div class="exercise-image">
+          <img src="./images/icon-exercise.svg" alt="Exercise icon" aria-label="icon of a stickman running" />
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Exercise</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-exercise-h"></h5>
+            <p class="previous" id="previous-exercise-h"></p>
+          </div>
+        </div>
+      </div>
+      <div class="social activity" tabindex="0">
+        <div class="image">
+          <img src="./images/icon-social.svg" alt="Social icon" aria-label="icon of a conversation" />
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Social</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-social-h"></h5>
+            <p class="previous" id="previous-social-h"></p>
+          </div>
+        </div>
+      </div>
+      <div class="self-care activity" tabindex="0">
+        <div class="image">
+          <img src="./images/icon-self-care.svg" alt="Self-care icon" aria-label="icon of a heart with a white cross inside" />
+        </div>
+        <div class="container">
+          <div class="info">
+            <p class="heading">Self Care</p>
+            <div class="menu">
+              <img src="./images/icon-ellipsis.svg" aria-label="Menu icon"/>
+            </div>
+          </div>
+          <div class="hours">
+            <h5 class="current-hours" id="current-self-care-h"></h5>
+            <p class="previous" id="previous-self-care-h"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a class="grow" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a class="grow" href="https://www.frontendmentor.io/profile/Okkie14" target="_blank">Okkert Joubert</a>.</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

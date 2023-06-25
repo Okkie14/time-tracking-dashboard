@@ -1,0 +1,411 @@
+:root {
+    --primary-blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%); /* (work) */
+    --soft-blue-play: hsl(195, 74%, 62%); /* (play) */
+    --light-red-study: hsl(348, 100%, 68%); /* (study) */
+    --lime-green-exercise: hsl(145, 58%, 55%); /* (exercise) */
+    --violet-social: hsl(264, 64%, 52%); /* (social) */
+    --soft-orange-self-care : hsl(43, 84%, 65%); /* (self care) */
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+
+    --fs: 18px;
+    --fw-small: 300;
+    --fw-normal: 400;
+    --fw-bold: 500;
+
+    --ff: 'Rubik', sans-serif;
+}
+
+/* 1. Use a more-intuitive box-sizing model.*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin*/
+* {
+    margin: 0;
+}
+/* Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: var(--fs);
+    font-weight: var(--fw-normal);
+    font-family: var(--ff);
+    background-color: var(--very-dark-blue);
+}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/* 6. Remove built-in form typography styles */
+input, button, textarea, select {
+    font: inherit;
+}
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* 8. Create a root stacking context */
+#root, #__next {
+    isolation: isolate;
+}
+
+.report {
+    background-color: var(--dark-blue);
+    border-radius: 0.75em;
+}
+
+.profile-section {
+    background-color: var(--primary-blue);
+    border-radius: 0.75em;
+    color: var(--pale-blue);
+    padding: 1.5em 0;
+    font-weight: var(--fw-small);
+}
+
+.profile-image {
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.report-for {
+    font-size: 0.8rem;
+    color: var(--desaturated-blue);
+    font-weight: var(--fw-bold);
+}
+
+.name {
+    color: var(--pale-blue);
+    font-size: 1.1rem;
+}
+
+.periodicals {
+    display: grid;
+    color: var(--desaturated-blue);
+    font-weight: var(--fw-small);
+    font-size: 0.8rem;
+}
+
+.results {
+    display: grid;
+    gap: 1em;
+}
+
+.activity {
+    border-radius: 0.75em;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+}
+
+.work {
+    background-color: var(--light-red-work);
+    margin-top: 1em;
+}
+
+.play {
+    background-color: var(--soft-blue-play);
+}
+
+.study {
+    background-color: var(--light-red-study);
+}
+
+.exercise {
+    background-color: var(--lime-green-exercise);
+}
+
+.social {
+    background-color: var(--violet-social);
+}
+
+.self-care {
+    background-color: var(--soft-orange-self-care);
+}
+
+.image {
+    position: relative;
+    top: -0.65em;
+    justify-self: end;
+    padding-right: 1em;
+    height: 4.15em;
+}
+
+.remote-image {
+    position: relative;
+    top: -0.45em;
+    justify-self: end;
+    padding-right: 1em;
+    height: 4.15em;
+}
+
+.exercise-image {
+    position: relative;
+    justify-self: end;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    height: 4.15em;
+}
+
+.container {
+    background-color: var(--dark-blue);
+    padding: 1.1em 0;
+    margin-top: -2.25em;
+    z-index: 1;
+    border-radius: 0.75em;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1em;
+}
+
+.heading {
+    color: var(--pale-blue);
+    font-weight: var(--fw-bold);
+}
+
+.menu {
+    justify-self: end;
+    align-self: center;
+    isolation: isolate;
+}
+
+.hours {
+    display: grid;
+    padding: 0 1em;
+}
+
+.current-hours {
+    color: var(--pale-blue);
+    font-weight: var(--fw-small);
+    font-size: 1.7rem;
+}
+
+.previous {
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+    font-weight: var(--fw-small);
+}
+
+/* hover states */
+#daily:hover,
+#daily:focus {
+    color: var(--pale-blue);
+    cursor: pointer;
+    transition: color 0.5s ease-out;
+}
+
+#weekly:hover,
+#weekly:focus {
+    color: var(--pale-blue);
+    cursor: pointer;
+    transition: color 0.5s ease-out;
+}   
+
+#monthly:hover,
+#monthly:focus {
+    color: var(--pale-blue);
+    cursor: pointer;
+    transition: color 0.5s ease-out;
+}
+
+.container:has(.menu:hover) {
+    background-color: var(--dark-blue);
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--desaturated-blue);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+/* Active State */
+.active {
+    color: var(--pale-blue);
+}
+
+/* Footer */
+.attribution {
+    font-size: 0.8rem;
+    color: var(--pale-blue);
+    text-align: center;
+    display: grid;
+    font-weight: var(--fw-small);
+}
+
+.grow { 
+    color: var(--soft-blue-play);
+    transition: color 0.3s ease;
+}
+
+.grow:hover {
+    color: var(--light-red-study);
+    font-weight: var(--fw-normal);
+    cursor: pointer;
+}
+
+@media (width <= 450px) {
+    .main-section {
+        width: 80%;
+        margin: 3em auto;
+    }
+
+    .profile-section {
+        display: flex;
+    }
+
+    .profile-image {
+        margin: 0 1em;
+    }
+
+    .periodicals {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        padding: 1.25em 1em;
+        text-align: center;
+    }
+
+    .hours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .previous {
+        text-align: end;
+        align-self: center;
+    }
+}
+
+@media (width > 450px) and (max-width: 1000px) {
+    .main-section {
+        width: 50%;
+        margin: 3em auto;
+    }
+    
+    .profile-section {
+        display: flex;
+    }
+
+    .profile-image {
+        margin: 0 1em;
+    }
+
+    .periodicals {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        padding: 1.25em 1em;
+        text-align: center;
+    }
+
+    .hours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .previous {
+        text-align: end;
+        align-self: center;
+    }
+}
+
+@media (width > 1000px) and (max-width: 1200px) {
+    .main-section {
+        width: 85%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 1em;
+    }
+    
+    .profile-section {
+        display: grid;
+    }
+
+    .profile-image {
+        margin: 0 1em;
+    }
+
+    .profile-info {
+        margin: 1em 1em;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .periodicals {
+        padding: 1.25em 1em;
+        gap: 1em;
+        font-size: 0.9rem;
+    }
+
+    .results {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .work {
+        margin-top: 0;
+    }
+
+    .current-hours {
+        font-size: 3.5rem;
+    }
+}
+
+@media (width > 1200px) {
+    .main-section {
+        width: 70%;
+        margin: 3em auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        gap: 1em;
+    }
+    
+    .profile-section {
+        display: grid;
+    }
+
+    .profile-image {
+        margin: 0 1em;
+    }
+
+    .profile-info {
+        margin: 1em 1em;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .periodicals {
+        padding: 1.25em 1em;
+        gap: 1em;
+        font-size: 0.9rem;
+    }
+
+    .results {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .work {
+        margin-top: 0;
+    }
+
+    .current-hours {
+        font-size: 3.5rem;
+    }
+}
