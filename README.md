@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard solution
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-9TKidYg_8_]
+- Live Site URL: [https://time-tracking-dashboard-lovat-three.vercel.app/]
 
 ## My process
 
@@ -52,21 +52,22 @@ Using the css pseudo class :has was a first
 
 ```css
 .container:has(.menu:hover) {
-    background-color: var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 
 .menu:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container:hover {
-    background-color: var(--desaturated-blue);
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 ```
+
 ```js
-const monthlyHours = async ()
+const monthlyHours = async();
 ```
 
 ### Continued development
