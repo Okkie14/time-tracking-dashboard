@@ -39,6 +39,8 @@ body {
     font-weight: var(--fw-normal);
     font-family: var(--ff);
     background-color: var(--very-dark-blue);
+    height: 100dvh;
+    align-content: center;
 }
 /* 5. Improve media defaults */
 img, picture, video, canvas, svg {
